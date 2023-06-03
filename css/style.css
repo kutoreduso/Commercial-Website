@@ -1,3 +1,11 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: #dfdfdf;
+  font-family:Arial, Helvetica, sans-serif;
+
+}
 .btn-close,
 .btn {
   padding-right: 18px;
@@ -8,15 +16,10 @@
 }
 
 .btn:hover {
-  background-color: black;
-  color:white;
+  background-color:#363636;
+  color: #dfdfdf;;
 }
-body {
-  padding: 0;
-  margin: 0;
-  background-color: #dfdfdf;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
+
 .offcanvas-header,
 .offcanvas-body {
   background-color: #dfdfdf;
@@ -60,11 +63,128 @@ body {
   width: 180px;
 }
 .overlay {
-  position:absolute;
+  
   top:0;
   bottom: 0;
   left: 0;
   right: 0;
   width:100%;
   height: 100%;
+}
+img {
+  width:100%;
+  height:100vh;
+  object-fit: cover;
+}
+.blog-text {
+  width:100%;
+  height: 100%;
+}
+div.blog-text {
+  color:#363636;
+  margin-top: -850px;
+}
+.blog-text div:nth-child(1) h1 {
+  font-size: 25px;
+  margin-top: 100px;
+}
+
+.blog-text div:nth-child(2) h1 {
+  font-size: 60px;
+  margin-top: 200px;
+}
+.service-section {
+  background-color:#c7c7c7 ;
+  padding-top: 100px;
+  height:100%;
+  width:100%;
+}
+.top-wrap {
+  padding-top: 20px;
+}
+.bottom-wrap {
+  padding-top: 20px;
+}
+.service-section div:nth-child(3) h1{
+ 
+  color:#363636;
+  font-size: 45px;
+}
+.service-section div:nth-child(4) h1{
+  color:#363636;
+  font-size: 45px;
+}
+.service-section div:nth-child(5) h1{
+  color:#363636;
+  font-size: 45px;
+}
+
+
+a {
+  color:#363636;
+  text-decoration: none;
+}
+a:hover {
+  color:black;
+}
+
+@media screen and (min-width:768px) and (max-width:999px) {
+  .blog-text h1 {
+    margin-top: -260px;
+    font-size: 30px;
+  }
+  img {
+    height:100vh;
+    object-fit: cover;
+  }
+  .blog-text div:nth-child(2) h1 {
+    font-size: 100px;
+    margin-top: 200px;
+  }
+  .blog-text div:nth-child(2) h1 {
+    font-size: 150px;
+    margin-top: 200px;
+  }
+  div.blog-text {
+    color:#363636;
+    margin-top: -1050px;
+  }
+  .service-section div:nth-child(3) h1{
+    font-size: 65px;
+  }
+  .service-section div:nth-child(4) h1{
+    font-size: 65px;
+  }
+  .service-section div:nth-child(5) h1{
+    font-size: 65px;
+  }
+}
+@media screen and (min-width:1000px) {
+  .blog-text h1 {
+    margin-top: -100px;
+    font-size: 25px;
+  }
+  .blog-text div:nth-child(1) h1 {
+    font-size: 25px;
+    margin-top: -70px;
+  }
+  
+  .blog-text div:nth-child(2) h1 {
+    font-size: 120px;
+    margin-top: 200px;
+  }
+  div.blog-text {
+    color:#363636;
+    margin-top: -750px;
+  }
+  .service-section div:nth-child(3) h1{
+    font-size: 100px;
+  }
+  .service-section div:nth-child(4) h1{
+    font-size: 100px;
+  }
+  .service-section div:nth-child(5) h1{
+    font-size: 100px;
+  }
+  
 }
